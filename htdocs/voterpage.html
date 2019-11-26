@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel = "stylesheet" type = "text/css" href = "voterpage.css">
+        <title>Voter LoggedIn</title>
+    </head>
+
+    <body>
+        <h1>VOTER'S VIEW</h1>
+        <center>
+            <div class = "V1" >
+                <!-- Button1 -->
+                <button class = "but" onclick="document.getElementById('vpopup1').style.display='block'">View Candidates</button>
+                <div id="vpopup1">
+                    <form>
+
+                        <button class ="but1" onclick="document.getElementById('vpopup1').style.display='none'">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </center>
+
+
+        <center>
+            <form>
+                <button class = "but1" type = "submit" formaction = "main.html">Go Back</button>
+            </form><br><br>
+        </center>
+    </body>
+</html>

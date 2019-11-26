@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel = "stylesheet" type = "text/css" href = "adminpage.css">
+        <title>Admin LoggedIn</title>
+    </head>
+
+    <body>
+        <h1>ADMIN FUNCTIONS</h1>
+            <center>
+                <div class = "C1">
+                    <button class = "but" onclick="document.getElementById('popup').style.display='block'">Insert Candidate</button>
+                    <div id="popup">
+                       Enter Candidate Details<br><br>
+                       <form class = "F1" action="candidateinsert.php" method="post">
+                            <span style = "margin : 20px 60px 20px 0px ">Candidate Id : </span><input type = "text" name="cid" ><br>
+                            <span style = "margin : 20px 29px 20px 0px">Candidate Name :</span> <input type = "text" name="cname" ><br>
+                            <span style = "margin : 20px 122px 20px 0px">Status :</span><input type = "text" name="status"><br>
+                            <span style = "margin : 20px 5px 20px 0px">Years of Experience :</span><input type = "text" name="exp"><br>
+                            <span style = "margin : 20px 90px 20px 0px">Efficiency :</span><input type = "text" name="eff"><br>
+                            <span style = "margin : 20px 10px 20px 0px">Party Id :</span><input type = "text" name="pid1"><br><br>
+                            <span style = "margin : 20px 10px 20px 0px">Ward Number :</span><input type = "text" name="wid1"><br><br>
+                            <button class= "but1" type="submit">Submit</button>
+                            <button class = "but1" type = "reset" >Reset</button>
+                        </form>
+                    </div>
+                    <!-- Button2 -->
+                     <button class = "but" onclick="document.getElementById('popup1').style.display='block'">Insert Voter </button>
+                     <div id="popup1">
+                        Enter Voter Details<br><br>
+                        <form class = "F1" action="voterinsert.php" method="post">
+                             <span style = "margin : 20px 80px 20px 0px ">Voter Id : </span><input type = "text" name="vid" ><br>
+                             <span style = "margin : 20px 100px 20px 0px"> Name :</span> <input type = "text" name="vname" ><br>
+                             <span style = "margin : 20px 38px 20px 0px">Date Of Birth :</span><input type = "text" name="dob"><br>
+                             <span style = "margin : 20px 80px 20px 0px">Ward ID :</span><input type = "text"name="wid"><br>
+                             <button class= "but1" type="submit">Submit</button>
+                             <button class = "but1" type = "reset" >Reset</button>
+                         </form>
+                     </div>
+                     <!-- Button3 -->
+                     <button class = "but" onclick="document.getElementById('popup2').style.display='block'">Insert Ward </button>
+                     <div id="popup2">
+                        Enter Ward Details<br><br>
+                        <form class = "F1" action="wardinsert.php" method="post">
+                             <span style = "margin : 20px 90px 20px 0px ">Ward Id : </span><input type = "text" name="wid" ><br>
+                             <span style = "margin : 20px 58px 20px 0px">Ward Name :</span> <input type = "text" name="wname" ><br>
+                             <span style = "margin : 20px 8px 20px 0px">Number Of People :</span><input type = "text" name="nop"><br>
+                             <span style = "margin : 20px 38px 20px 0px">Number of Voters :</span><input type = "text" name="nopl"><br>
+                             <span style = "margin : 20px 10px 20px 0px">Number of Houses :</span><input type = "text" name="noh"><br>
+                             <span style = "margin : 20px 25px 20px 0px">Number of Parks:</span><input type = "text" name="nopks"><br>
+                             <span style = "margin : 20px 20px 20px 0px">Number of Streets:</span><input type = "text" name="nostr"><br>
+                             <span style = "margin : 20px 10px 20px 0px">Number os Schools :</span><input type = "text" name="noskl"><br><br>
+                             <button class= "but1" type="submit">Submit</button>
+                             <button class = "but1" type = "reset" >Reset</button>
+                         </form>
+                     </div>
+                     <!-- Button4 -->
+                     <button class = "but" onclick="document.getElementById('popup6').style.display='block'">Insert Party </button>
+                     <div id="popup6">
+                        Enter Party Details<br><br>
+                        <form class = "F1" action="partyinsert.php" method="post">
+                             <span style = "margin : 20px 142px 20px 0px ">Party Id : </span><input type = "text" name="pid5" ><br>
+                             <span style = "margin : 20px 110px 20px 0px"> Party Name :</span> <input type = "text" name="pname5" ><br>
+                             <span style = "margin : 20px 19px 20px 0px">Number of Candidates :</span><input type = "text" name="noc5"><br>
+                             <span style = "margin : 20px 160px 20px 0px">Status :</span><input type = "text" name="status5"><br>
+                             <span style = "margin : 20px 150px 20px 0px">Success :</span><input type = "text" name="success5"><br>
+                             <button class= "but1" type="submit">Submit</button>
+                             <button class = "but1" type = "reset" >Reset</button>
+                            <!-- <button class ="but1" onclick="document.getElementById('popup6').style.display='none'">Cancel</button> -->
+                         </form>
+                     </div>
+                    <!-- Button5 -->
+                    <button class = "but" onclick="document.getElementById('popup5').style.display='block'">Insert Welfare</button>
+                    <div id = "popup5">
+                       Insert Welfare Details<br><br>
+                       <form class = "F1" action="welfareinsert.php" method="post">>
+                            <span style = "margin : 20px 140px 20px 0px ">Bill ID : </span><input type = "text" name="bid" ><br>
+                            <span style = "margin : 20px 80px 20px 0px">Candidate ID :</span> <input type = "text" name="cid" ><br>
+                            <span style = "margin : 20px 125px 20px 0px">Ward ID :</span><input type = "text" name="wid"><br>
+                            <span style = "margin : 20px 115px 20px 0px">Work Name :</span><input type = "text" name="bname"><br>
+                            <span style = "margin : 20px 30px 20px 0px">Sanctioned Amount :</span><input type = "text" name="sa"><br>
+                            <span style = "margin : 20px 75px 20px 0px">Spent Amount :</span><input type = "text" name="spnta"><br>
+                            <span style = "margin : 20px 90px 20px 0px">Success Rate :</span><input type = "text" name="succrate"><br>
+                            <span style = "margin : 20px 115px 20px 0px">Feedback :</span><input type = "text" name="fb"><br>
+                            <button class= "but1" type="submit">Submit</button>
+                            <button class = "but1" type = "reset" >Reset</button>
+                        </form>
+                    </div>
+                    <!-- Button6 -->
+                    <button class = "but" onclick="document.getElementById('popup4').style.display='block'">Update Candidate</button>
+                    <div id = "popup4">
+                       Update Candidate Details<br><br>
+                       <form class = "F1" action="updatecandidate.php" method="post">
+                            <span style = "margin : 20px 60px 20px 0px ">Candidate Id : </span><input type = "text" name="cid" ><br>
+                            <span style = "margin : 20px 29px 20px 0px">Candidate Name :</span> <input type = "text" name="cname" ><br>
+                            <span style = "margin : 20px 122px 20px 0px">Status :</span><input type = "text" name="status"><br>
+                            <span style = "margin : 20px 5px 20px 0px">Years of Experience :</span><input type = "text" name="exp"><br>
+                            <span style = "margin : 20px 90px 20px 0px">Efficiency :</span><input type = "text" name="eff"><br>
+                            <span style = "margin : 20px 105px 20px 0px">Party Id :</span><input type = "text" name="pid"><br><br>
+                            <span style = "margin : 20px 105px 20px 0px">Ward Id :</span><input type = "text" name="wid"><br><br>
+                            <button class= "but1" type="submit">Submit</button>
+                            <button class = "but1" type = "reset" >Reset</button>
+                           <button class ="but1" onclick="document.getElementById('popup4').style.display='none'">Cancel</button>
+                        </form>
+                    </div>
+                    <!-- Button7 -->
+                        <button class = "but" onclick="document.getElementById('popup3').style.display='block'">Update Ward Details </button>
+                        <div id="popup3">
+                           Enter Ward Details to be Update it<br><br>
+                           <form class = "F1"  action="updateward.php" method="post">
+                                <span style = "margin : 20px 90px 20px 0px ">Ward Id : </span><input type = "text" name="wid" ><br>
+                                <span style = "margin : 20px 58px 20px 0px">Ward Name :</span> <input type = "text" name="wname" ><br>
+                                <span style = "margin : 20px 8px 20px 0px">Number Of People :</span><input type = "text" name="nop"><br>
+                                <span style = "margin : 20px 38px 20px 0px">Number of Voters :</span><input type = "text" name="nopl"><br>
+                                <span style = "margin : 20px 10px 20px 0px">Number of Houses :</span><input type = "text" name="noh"><br>
+                                <span style = "margin : 20px 25px 20px 0px">Number of Parks:</span><input type = "text" name="nopks"><br>
+                                <span style = "margin : 20px 20px 20px 0px">Number of Streets:</span><input type = "text" name="nostr"><br>
+                                <span style = "margin : 20px 10px 20px 0px">Number of Schools :</span><input type = "text" name="noskl"><br><br>
+                                
+                                <button class= "but1" type="submit">Submit</button>
+                                <button class = "but1" type = "reset" >Reset</button>
+                               <button class ="but1" onclick="document.getElementById('popup3').style.display='none'">Cancel</button>
+                            </form>
+                        </div>
+                        <!-- Button8 -->
+                        <button class = "but" onclick="document.getElementById('popup7').style.display='block'">Update Welfare</button>
+                        <div id = "popup7">
+                           Update Welfare Details<br><br>
+                           <form class = "F1"  action="updatewelfare.php" method="post">
+                                <span style = "margin : 20px 140px 20px 0px ">Bill ID : </span><input type = "text" name="bid" ><br>
+                                <span style = "margin : 20px 80px 20px 0px">Candidate ID :</span> <input type = "text" name="cid"><br>
+                                <span style = "margin : 20px 125px 20px 0px">Ward ID :</span><input type = "text" name="wid"><br>
+                                <span style = "margin : 20px 115px 20px 0px">Bill Name :</span><input type = "text" name="bname"><br>
+                                <span style = "margin : 20px 30px 20px 0px">Sanctioned Amount :</span><input type = "text" name="sa"><br>
+                                <span style = "margin : 20px 75px 20px 0px">Spent Amount :</span><input type = "text" name="spnta"><br>
+                                <span style = "margin : 20px 90px 20px 0px">Success Rate :</span><input type = "text" name="succrate"><br>
+                                <span style = "margin : 20px 115px 20px 0px">Feedback :</span><input type = "text" name="fb"><br>
+                                <button class= "but1" type="submit">Submit</button>
+                                <button class = "but1" type = "reset" >Reset</button>
+                               <button class ="but1" onclick="document.getElementById('popup7').style.display='none'">Cancel</button>
+                            </form>
+                        </div>
+                        <!-- Button9 -->
+                        <button class = "but" onclick="document.getElementById('popup8').style.display='block'">Update Voter </button>
+                        <div id="popup8">
+                           Update Voter Details<br><br>
+                           <form class = "F1" action="updatevoter.php" method="post">
+                                <span style = "margin : 20px 80px 20px 0px ">Voter Id : </span><input type = "text" name="vid" ><br>
+                                <span style = "margin : 20px 100px 20px 0px"> Name :</span> <input type = "text" name="vname" ><br>
+                                <span style = "margin : 20px 38px 20px 0px">Date Of Birth :</span><input type = "text" name="dob"><br>
+                                <span style = "margin : 20px 80px 20px 0px">Ward ID :</span><input type = "text" name="wid"><br>
+                                <button class= "but1" type="submit">Submit</button>
+                                <button class = "but1" type = "reset" >Reset</button>
+                               <button class ="but1" onclick="document.getElementById('popup8').style.display='none'">Cancel</button>
+                            </form>
+                        </div>
+                        <!-- Button10 -->
+                        <button class = "but" onclick="document.getElementById('popup9').style.display='block'">Update Party </button>
+                        <div id="popup9">
+                           Update Party Details<br><br>
+                           <form class = "F1" action="updateparty.php" method="post">
+                                <span style = "margin : 20px 142px 20px 0px ">Party Id : </span><input type = "text" name="pid" ><br>
+                                <span style = "margin : 20px 110px 20px 0px"> Party Name :</span> <input type = "text" name="pname" ><br>
+                                <span style = "margin : 20px 19px 20px 0px">Number of Candidates :</span><input type = "text" name="noc"><br>
+                                <span style = "margin : 20px 160px 20px 0px">Status :</span><input type = "text" name="status"><br>
+                                <span style = "margin : 20px 150px 20px 0px">Success :</span><input type = "text" name="success"><br>
+                                <button class= "but1" type="submit">Submit</button>
+                                <button class = "but1" type = "reset" >Reset</button>
+                               <button class ="but1" onclick="document.getElementById('popup9').style.display='none'">Cancel</button>
+                            </form>
+                        </div>
+                        <!-- Button11 -->
+                        <button class = "but" onclick="document.getElementById('popup10').style.display='block'">Delete Welfare </button>
+                        <div id="popup10">
+                           Delete a Bill<br><br>
+                           <form class = "F1" action="deletewelfare.php" method="post">
+                                <span style = "margin : 20px 85px 20px 0px ">Bill Id : </span><input type = "text" name="bid"><br>
+                                <button class= "but1" type="submit">Submit</button>
+                                <button class = "but1" type = "reset" >Reset</button>
+                               <button class ="but1" onclick="document.getElementById('popup10').style.display='none'">Cancel</button>
+                            </form>
+                        </div>
+                        <!-- Button12 -->
+                        <button class = "but" onclick="document.getElementById('popup11').style.display='block'"> Delete Party </button>
+                        <div id="popup11">
+                           Delete a Party<br><br>
+                           <form class = "F1" action="deleteparty.php" method="post">
+                                <span style = "margin : 20px 85px 20px 0px ">Party Id : </span><input type = "text" name="pid" ><br><br>
+                                <button class= "but1" type="submit">Submit</button>
+                                <button class = "but1" type = "reset" >Reset</button>
+                               <button class ="but1" onclick="document.getElementById('popup11').style.display='none'">Cancel</button>
+                            </form>
+                        </div>
+                        <!-- Button13 -->
+                        <button class = "but" onclick="document.getElementById('popup12').style.display='block'"> Delete Candidate </button>
+                        <div id="popup12">
+                           Delete a Candidate<br><br>
+                           <form class = "F1" action="deletecandidate.php" method="post">
+                                <span style = "margin : 20px 85px 20px 0px ">Candidate Id : </span><input type = "text" name="cid" ><br><br>
+                                <button class= "but1" type="submit">Submit</button>
+                                <button class = "but1" type = "reset" >Reset</button>
+                               <button class ="but1" onclick="document.getElementById('popup12').style.display='none'">Cancel</button>
+                            </form>
+                        </div>
+                        <!-- Button14 -->
+                        <button class = "but" onclick="document.getElementById('popup13').style.display='block'"> Delete Voter </button>
+                        <div id="popup13">
+                           Delete a Voter<br><br>
+                           <form class = "F1" action="deletevoter.php" method="post">
+                                     <span style = "margin : 20px 85px 20px 0px ">Voter Id : </span><input type = "text" name="vid" ><br><br>
+                                <button class= "but1" type="submit">Submit</button>
+                                <button class = "but1" type = ter"reset" >Reset</button>
+                               <button class ="but1" onclick="document.getElementById('popup13').style.display='none'">Cancel</button>
+                            </form>
+                        </div>
+                        <!-- Button15 -->
+                        <button class = "but" onclick="document.getElementById('popup14').style.display='block'"> Delete Ward </button>
+                        <div id="popup14">
+                           Delete a Ward<br><br>
+                           <form class = "F1" action="deleteward.php" method="post">
+                                <span style = "margin : 20px 85px 20px 0px ">Ward Id : </span><input type = "text"  name="wid"><br><br>
+                                <button class= "but1" type="submit">Submit</button>
+                                <button class = "but1" type = ter"reset" >Reset</button>
+                               <button class ="but1" onclick="document.getElementById('popup14').style.display='none'">Cancel</button>
+                            </form>
+                        </div><br><br>
+                    </div>
+                </center>
+                <!-- Button16 -->
+                <center>
+                    <form>
+                        <button class = "but1" type = "submit" formaction = "main.html">Go Back</button>
+                    </form><br><br>
+                    <p class = "C2">This page is for admin use only</p>
+                <center>
+        <script src = "main.html" ></script>
+    </body>
+</html>

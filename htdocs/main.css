@@ -1,0 +1,73 @@
+h1{
+  color : white;
+  background-color : #1976D2;
+  text-align : center;
+  font-size : 60px;
+  padding: 50px 0px 50px 0px;
+}
+.c1 {
+  height : 30px;
+  color : dodgerblue;
+  font-size: 30px;
+  text-align : center;
+}
+.c2 {
+  height : 20px;
+  color : dodgerblue;
+  font-size: 20px;
+  text-align : center;
+}
+
+.but{
+  border-radius: 5px;
+  padding: 10px;
+  border-color: #6495ed;
+  background-color: #f8f8ff;
+  font-weight: bold;
+  margin: 0px 10px 0px 10px;
+  cursor: pointer;
+}
+.but1{
+    font-size : 15px;
+    border-radius: 5px;
+    padding: 2px;
+    color : #6495ed;
+    border-color : #6495ed;
+    background-color : #f8f8ff;
+    font-weight : bold;
+    width : 100px;
+    margin : 20px 40px 20px 40px;
+    cursor : pointer;
+}
+#mpopup1{
+    display:none;
+    background:#efefef;
+    border:1px solid  #6495ed ;
+    width:500px;
+    height:260px;
+    font-size : 20px;
+    border-radius: 5px;
+    padding: 5px;
+    color : #6495ed;
+    border-color : #6495ed;
+    background-color : #f8f8ff;
+    font-weight : bold;
+    /* margin : 20px 40px 20px 40px; */
+    cursor : pointer;
+ }
+ #mpopup2{
+     display:none;
+     background:#efefef;
+     border:1px solid  #6495ed ;
+     width:500px;
+     height:230px;
+     font-size : 20px;
+     border-radius: 5px;
+     padding: 5px;
+     color : #6495ed;
+     border-color : #6495ed;
+     background-color : #f8f8ff;
+     font-weight : bold;
+     /* margin : 20px 40px 20px 40px; */
+     cursor : pointer;
+  }

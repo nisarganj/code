@@ -1,0 +1,46 @@
+h1{
+    font-size : 60px;
+    padding :10px;
+    background-color : #6495ed;
+    color : white;
+    text-align : center;
+}
+.but1{
+    font-size : 15px;
+    border-radius: 5px;
+    padding: 2px;
+    color : #6495ed;
+    border-color : #6495ed;
+    background-color : #f8f8ff;
+    font-weight : bold;
+    width : 100px;
+    margin : 20px 40px 20px 40px;
+    cursor : pointer;
+}
+.but{
+    font-size : 20px;
+    border-radius: 5px;
+    padding: 5px;
+    color : #6495ed;
+    border-color : #6495ed;
+    background-color : #f8f8ff;
+    font-weight : bold;
+    width : 240px;
+    margin : 20px 40px 20px 40px;
+    cursor : pointer;
+}
+#vpopup1{
+    display:none;
+    background:#efefef;
+    border:1px solid  #6495ed ;
+    width:600px;
+    height:300px;
+    font-size : 20px;
+    border-radius: 5px;
+    padding: 5px;
+    color : #6495ed;
+    border-color : #6495ed;
+    background-color : #f8f8ff;
+    font-weight : bold;
+    cursor : pointer;
+ }
