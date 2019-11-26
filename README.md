@@ -1,0 +1,2 @@
+DBMS 5th Sem Project on COMMUNITY POLITICS DATABASE
+Uses XAMPP Server with PHPMyAdmin.
